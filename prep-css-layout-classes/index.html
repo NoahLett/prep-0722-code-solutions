@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+
+    body {
+      background-color: #CDC1B6;
+      border-style: groove;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 50px;
+      font-style: italic;
+      color: #704241;
+      text-shadow: 2px 2px 2px #333333
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      border-style: groove;
+      box-shadow: 3px 3px 2px #333333;
+    }
+
+    p {
+      text-indent: 20px;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+    }
+
+    .column {
+      flex-basis: 33.333333333%;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>The Adventures of Indiana Jones</h1>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <img src="images/raiders.jpg">
+        <h3>Raiders of the Lost Ark</h3>
+        <p>In the year 1936, American archaeologist Indiana Jones and his partner, Marion of Nepal, seek the lost treasure of the Ark of the Covenant. However, things quickly go south when the Nazi Party involves themselves in the search.</p>
+      </div>
+      <div class="column">
+        <img src="images/temple.jpg">
+        <h3>Temple of Doom</h3>
+        <p>In the year 1935, Indiana Jones and his two partners, Short Round and Willie Scott, infiltrate the cult of Kali in India to liberate the locals from the hellish human sacrifice rituals. However, the plan hardly executes as it was originally intended.</p>
+      </div>
+      <div class="column">
+        <img src="images/crusade.jpg">
+        <h3>The Last Crusade</h3>
+        <p>In the year 1938, Indiana Jones, along with his father, Henry Jones, and love interest, Dr. Elsa Schnider, disembark on a hunt for the Holy Grail. The plan goes arwy when betrayal ensues and the life of Indiana's father is threatened.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
